@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Produk</title>
+</head>
+<body>
+
+    <h1>Manajemen Produk</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody id="produkTable">
+            <!-- Data Produk akan muncul di sini -->
+        </tbody>
+    </table>
+
+    <button onclick="tampilkanProduk()">Tampilkan Produk</button>
+    <button onclick="tambahProduk(6, 'Monitor', 2000000)">Tambah Monitor</button>
+    <button onclick="hapusProduk(1)">Hapus Laptop</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
