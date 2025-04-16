@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 JS</title>
+</head>
+<body>
+    <h2>Kalkulator Luas persegi</h2>
+    <label>Masukan Sisi:</label>
+    <input type="number" id="sisi">
+    <button onclick="hitungluas()">Hitung</button>
+    <p id="hasil"></p>
+
+    <script>
+        function hitungluas() {
+            // ambil nilai sisi dr input
+            let sisi = document.getElementById("sisi").value;
+            // hitung luas ( sisi x sisi )
+            let luas= sisi * sisi;
+            // hasil
+            document.getElementById("hasil").innerText = "Luas: " + luas;
+        }
+    </script>
+</body>
+</html>
